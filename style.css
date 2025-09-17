@@ -164,6 +164,38 @@ html, body{
 }
 /* ------------------ */
 
+/* Marque section */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+ 
+    to {
+        transform: translateX(-100%);
+    }
+}
+ 
+.logos {
+    margin-top: 15vw;
+    margin-bottom: 10vw;
+    overflow: hidden;
+    padding: 3vw 0;
+    white-space: nowrap;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+ 
+.logo-slide {
+    display: inline-block;
+    animation: 25s slide linear infinite;
+   
+}
+ 
+.logo-slide img {
+    margin: 0 50px;
+}
+/* ------------------ */
+
 /* ABOUT SECTION */
 .about{
     width: 100%;
