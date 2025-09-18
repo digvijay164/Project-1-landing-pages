@@ -55,7 +55,7 @@ function elemImageHover(){
 
              gsap.to(elem.querySelector(".txt"), {
                 x: 0,
-                opacity: 1,
+                opacity: .7,
                 duration: 0.4,
                 ease: "Power2.out"
             })
