@@ -1,49 +1,54 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
 /* cursor */
-.cursor{
+.cursor {
     width: 20px;
     height: 20px;
     position: absolute;
     z-index: 999999;
     background-color: #fff;
     border-radius: 50%;
-    transition: all cubic-bezier(0.19,1,0.22,1) 1s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
-.bounding{
+.bounding {
     width: fit-content;
     /* background-color: red; */
     overflow: hidden;
 }
-.bounding-elem{
+
+.bounding-elem {
     transform: translateY(100%);
 }
 
 /* 1st SECTION */
 /* MAIN SECTION */
-.main{
+.main {
     width: 100%;
     background-color: black;
 }
+
 /* HERO SECTION */
-.hero{
+.hero {
     position: relative;
     height: 100vh;
     width: 100%;
     color: white;
     background-color: black;
 }
-.nav{
+
+.nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -51,14 +56,17 @@ html, body{
     padding: 20px 40px;
     color: white;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     color: white;
 }
-.heading{
+
+.heading {
     margin-top: 90px;
 }
-.heading h1{
+
+.heading h1 {
     margin-left: 30px;
     font-size: 9vw;
     text-transform: uppercase;
@@ -66,21 +74,25 @@ html, body{
     line-height: 1;
     opacity: .6;
 }
-.heading .second-h1{
+
+.heading .second-h1 {
     margin-left: 250px;
 }
-.block-text{
+
+.block-text {
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: end;
     width: fit-content
 }
-.block-text h3{
+
+.block-text h3 {
     font-size: 15px;
     text-align: right;
 }
-.small-headings{
+
+.small-headings {
     color: white;
     display: flex;
     flex-direction: column;
@@ -89,13 +101,15 @@ html, body{
     padding-right: 50px;
     /* background-color: red; */
 }
-.small-headings h5{
+
+.small-headings h5 {
     text-transform: uppercase;
     margin-top: .5vw;
     font-size: 1vw;
     text-align: right;
 }
-.hero-footer{
+
+.hero-footer {
     /* background-color: red; */
     padding: 0 2vw;
     width: 100%;
@@ -105,28 +119,32 @@ html, body{
     justify-content: space-between;
     align-items: center;
 }
-.hero-footer a{
+
+.hero-footer a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
-.icon-set{
+
+.icon-set {
     display: flex;
     gap: 5px;
 }
-.hero-footer .circle{
+
+.hero-footer .circle {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     background-color: #888;
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* ------------------ */
 
 /* 2nd SECTION */
-.second-section{
+.second-section {
     height: 110vh;
     width: 100%;
     padding-top: 200px;
@@ -134,7 +152,8 @@ html, body{
     color: white;
     background-color: black;
 }
-.elem{
+
+.elem {
     width: 100%;
     padding: 3.5vw 3vw;
     padding-right: 0;
@@ -145,15 +164,18 @@ html, body{
     justify-content: space-between;
     align-items: center;
 }
-.elem h1{
+
+.elem h1 {
     text-transform: uppercase;
     font-size: 7.6vw;
     opacity: .7;
 }
-.border-last{
+
+.border-last {
     border-bottom: 1px solid #888;
 }
-.elem img{
+
+.elem img {
     opacity: 0;
     height: 140%;
     z-index: 999;
@@ -162,6 +184,7 @@ html, body{
     border-radius: 50px;
     pointer-events: none;
 }
+
 /* ------------------ */
 
 /* Marque section */
@@ -169,12 +192,12 @@ html, body{
     from {
         transform: translateX(0);
     }
- 
+
     to {
         transform: translateX(-100%);
     }
 }
- 
+
 .logos {
     margin-top: 15vw;
     margin-bottom: 10vw;
@@ -184,20 +207,38 @@ html, body{
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
 }
- 
+
 .logo-slide {
     display: inline-block;
     animation: 25s slide linear infinite;
-   
+
 }
- 
+
 .logo-slide img {
     margin: 0 50px;
 }
+
+.btn {
+    margin: 70px 50px;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+
+}
+
+
 /* ------------------ */
 
 /* ABOUT SECTION */
-.about{
+.about {
     width: 100%;
     color: white;
     display: flex;
@@ -207,19 +248,23 @@ html, body{
     padding: 100px 10vw;
     padding-left: 40vw;
 }
-.text-about{
+
+.text-about {
     width: 25rem;
 }
-.text-about h5{
+
+.text-about h5 {
     text-transform: uppercase;
     opacity: .6;
     margin-bottom: 10px;
 }
-.text-about p{
+
+.text-about p {
     line-height: 1.7;
     margin-bottom: 30px;
 }
-.text-about a{
+
+.text-about a {
     padding: 12px 12px;
     border: 1px solid #888;
     border-radius: 100px;
@@ -227,46 +272,55 @@ html, body{
     color: white;
     font-size: 13px;
 }
-.about img{
+
+.about img {
     width: 250px;
 }
+
 /* ---------------------------- */
 
-/* SUBSCRIBE SECTION */ 
-.subscribe{
+/* SUBSCRIBE SECTION */
+.subscribe {
     padding: 20px 30px;
-    padding: 7vw ;
+    padding: 7vw;
     color: #fff;
 }
-.subscribe h5{
+
+.subscribe h5 {
     text-transform: uppercase;
     opacity: .6;
 }
-.subscribe h3{
+
+.subscribe h3 {
     text-transform: uppercase;
     font-size: 14px;
     margin-top: 10px;
 }
+
 /* ---------------------------- */
 
 /* FOOTER SECTION */
-.footer{
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
 }
-.footer-left{
+
+.footer-left {
     color: white;
     display: flex;
     gap: 30px
 }
-.footer-right{
+
+.footer-right {
     display: flex;
     gap: 20px;
 }
-.footer-right a{
+
+.footer-right a {
     text-decoration: none;
     color: white;
 }
+
 /* ---------------------------- */
