@@ -38,13 +38,29 @@ function firstPageAnimation(){
 function elemImageHover(){
     document.querySelectorAll(".elem").forEach(function(elem){
 
+        elem.addEventListener('mouseenter', function () {
+            gsap.to(elem.querySelector(".txt"), {
+                x: 35,
+                opacity: .4,
+                duration: 0.4,
+                ease: "Power2.out"
+            })
+        })
+
         elem.addEventListener('mouseleave', function(){
             gsap.to(elem.querySelector("img"), {
                 opacity: 0,
                 ease: Power3,
             })
+
+             gsap.to(elem.querySelector(".txt"), {
+                x: 0,
+                opacity: 1,
+                duration: 0.4,
+                ease: "Power2.out"
+            })
         })
-        
+    
         let rotate = 0;
         let diffRotate = 0; 
         elem.addEventListener('mousemove', function(dets){
@@ -74,3 +90,4 @@ mouseCursor();
 firstPageAnimation();
 elemImageHover();
 
+ 
